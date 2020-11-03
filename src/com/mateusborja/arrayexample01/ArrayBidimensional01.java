@@ -46,6 +46,7 @@ public class ArrayBidimensional01 {
             soma += mat[i][i];
         }
         System.out.println("\n" + "soma da diagonal principal: " + soma);
+
     }
 
 }
