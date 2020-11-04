@@ -26,7 +26,7 @@ public class ForExample04 {
         System.out.println();
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                System.out.printf(mat[i][j] + " ");
+                System.out.printf(mat[i][j] + " "); // imprimindo a diagonal principal
 
             }
 
