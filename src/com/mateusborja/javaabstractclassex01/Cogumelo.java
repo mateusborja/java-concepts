@@ -1,9 +1,10 @@
 package com.mateusborja.javaabstractclassex01;
 
-public class Diamante extends Item{
+public class Cogumelo extends Item {
+
 
     @Override
     public void pegar() {
-        System.out.println("Pegou o Diamante.");
+        System.out.println("Pegando Cogumelo.");
     }
 }

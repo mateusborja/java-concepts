@@ -14,9 +14,12 @@ public class AplicacaoJogo {
         mc.pegar();
 
         mc.setPosX(45);
-        System.out.println(mc.getPosX() + " metros em X");
+        System.out.println(mc.getPosX() + " unidades em X");
 
-        Item d2 = new Diamante();
+        Cogumelo c1 = new Cogumelo();
+        c1.pegar();
+
+        Item d2 = new Diamante(); //Classe abstrata fazendo referencia - variavel d2 do tipo Item
         d2.pegar();
 
     }
