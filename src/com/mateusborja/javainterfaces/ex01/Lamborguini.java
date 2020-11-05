@@ -2,8 +2,8 @@ package com.mateusborja.javainterfaces.ex01;
 
 public class Lamborguini implements Carro, ItemCaro {
 
-    private static String marca;
-    private static String modelo;
+    private String marca;
+    private String modelo;
 
     @Override
     public void virarEsquerda() {
@@ -33,25 +33,24 @@ public class Lamborguini implements Carro, ItemCaro {
         System.out.println("Lamborguini abriu a Porta.");
     }
 
-
     @Override
     public double getPreco() {
-        return 100000;
+        return 4500000;
     }
 
-    public static String getMarca() {
+    public String getMarca() {
         return marca;
     }
 
-    public static String getModelo() {
+    public String getModelo() {
         return modelo;
     }
 
-    public static void setMarca(String marca) {
-        Lamborguini.marca = marca;
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 
-    public static void setModelo(String modelo) {
-        Lamborguini.modelo = modelo;
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
 }

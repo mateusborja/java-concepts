@@ -2,8 +2,8 @@ package com.mateusborja.javainterfaces.ex01;
 
 public class Ferrari implements Carro, ItemCaro {
 
-    private static String marca;
-    private static String modelo;
+    private  String marca;
+    private  String modelo;
 
 
     @Override
@@ -37,22 +37,23 @@ public class Ferrari implements Carro, ItemCaro {
 
     @Override
     public double getPreco() {
-        return 10000;
+        return 3500000;
     }
 
-    public static void setMarca(String marca) {
-        Ferrari.marca = marca;
-    }
 
-    public static void setModelo(String modelo) {
-        Ferrari.modelo = modelo;
-    }
-
-    public static String getMarca() {
+    public String getMarca() {
         return marca;
     }
 
-    public static String getModelo() {
+    public String getModelo() {
         return modelo;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
 }
