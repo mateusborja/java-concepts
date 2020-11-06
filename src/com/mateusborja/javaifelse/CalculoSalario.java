@@ -1,4 +1,4 @@
-package com.mateusborja.jvaifelse;
+package com.mateusborja.javaifelse;
 
 import java.util.Locale;
 import java.util.Scanner;

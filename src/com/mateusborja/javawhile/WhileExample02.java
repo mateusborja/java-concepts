@@ -1,4 +1,4 @@
-package com.mateusborja.javawhile.ex01;
+package com.mateusborja.javawhile;
 
 import java.util.Scanner;
 
