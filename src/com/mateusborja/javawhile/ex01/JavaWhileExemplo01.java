@@ -1,5 +1,5 @@
 //java while
-package com.mateusborja.javawhile;
+package com.mateusborja.javawhile.ex01;
 
 public class JavaWhileExemplo01 {
 
