@@ -8,11 +8,11 @@ public class ContabilidadeGasolina {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        double descontoAlcool = 0;
-        double descontoGalosina = 0;
+        double percentualAlcool = 0;
+        double percentualGalosina = 0;
         double valorGasolina = 2.50;
         double valorAlcool = 1.90;
-        double total = 0.0;
+        double valorSemDesconto = 0.0;
         double valorDesconto = 0.0;
         double valorPagar = 0.0;
 
@@ -28,12 +28,12 @@ public class ContabilidadeGasolina {
         if (tipoCombustivel.equalsIgnoreCase("A")) {
 
             if (litrosVendidos <= 20.0) {
-                descontoAlcool = 3.0;
+                percentualAlcool = 3.0;
                 alcool = true;
                 gasolina = false;
 
             } else if (litrosVendidos > 20.0) {
-                descontoAlcool = 5.0;
+                percentualAlcool = 5.0;
                 alcool = true;
                 gasolina = false;
             }
@@ -43,12 +43,12 @@ public class ContabilidadeGasolina {
         if (tipoCombustivel.equalsIgnoreCase("G")) {
 
             if (litrosVendidos <= 20.0) {
-                descontoGalosina = 4.0;
+                percentualGalosina = 4.0;
                 gasolina = true;
                 alcool = false;
 
             } else if (litrosVendidos > 20.0) {
-                descontoGalosina = 6.0;
+                percentualGalosina = 6.0;
                 gasolina = true;
                 alcool = false;
             }
@@ -56,17 +56,17 @@ public class ContabilidadeGasolina {
         }
 
         if (gasolina == true) {
-            total = litrosVendidos * valorGasolina;
-            valorDesconto = (total / 100) * descontoGalosina;
-            valorPagar = total - valorDesconto;
+            valorSemDesconto = litrosVendidos * valorGasolina;
+            valorDesconto = (valorSemDesconto / 100) * percentualGalosina;
+            valorPagar = valorSemDesconto - valorDesconto;
 
             System.out.printf("%nValor pago: R$ %.2f%n", valorPagar);
         }
 
         if (alcool == true) {
-            total = litrosVendidos * valorAlcool;
-            valorDesconto = (total / 100) * descontoGalosina;
-            valorPagar = total - valorDesconto;
+            valorSemDesconto = litrosVendidos * valorAlcool;
+            valorDesconto = (valorSemDesconto / 100) * percentualGalosina;
+            valorPagar = valorSemDesconto - valorDesconto;
             System.out.printf("%nValor pago: R$ %.2f%n", valorPagar);
 
         }
