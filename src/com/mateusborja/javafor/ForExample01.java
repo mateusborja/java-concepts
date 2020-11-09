@@ -7,7 +7,7 @@ public class ForExample01 {
 
 
         for (int i = 0; i < 12; i++) {
-            if (i % 6 == 0)
+        if (i % 6 == 0)
                 System.out.println("O número " + i + " é Divisivel por 2 e 3");
             else {
                 if (i % 2 == 0)

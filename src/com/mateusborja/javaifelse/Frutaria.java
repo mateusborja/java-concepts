@@ -17,16 +17,16 @@ public class Frutaria {
         double precoKgMaca = 0.0;
 
         if (qtdMorango <= 5) {
-            precoKgMorango = 8.0; // vlr do kg;
+            precoKgMorango = 12.0; // vlr do kg;
 
         } else {
-            precoKgMorango = 5.0; // vlr do kg;
+            precoKgMorango = 15.0; // vlr do kg;
         }
 
         if (qtdMaca <= 5) {
-            precoKgMaca = 6.0;
+            precoKgMaca = 5.8;
         } else {
-            precoKgMaca = 4.5;
+            precoKgMaca = 6.8;
 
         }
 
