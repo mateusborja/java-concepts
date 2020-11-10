@@ -34,7 +34,10 @@ public class SolutionReverse {
 
     public static void main(String[] args) {
 
-        String[] str = new String[] {"abc", "abcd"};
+        SolutionReverse sr = new SolutionReverse();
+
+
+        String[] str = new String[]{"abc", "abcd"};
 
 
         int ct = 10;
