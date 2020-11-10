@@ -32,20 +32,36 @@ public class SolutionReverse {
         return;
     }
 
+
     public static void main(String[] args) {
 
         SolutionReverse sr = new SolutionReverse();
 
-
         String[] str = new String[]{"abc", "abcd"};
 
+        String letrasStr = "Mateus Borja";
+        char[] letras = letrasStr.toCharArray();
+
+        System.out.println();
+
+
+        for (int i = 0; i < letras.length; i++) {
+            System.out.print(letras[i]);
+        }
+
+        System.out.println();
+        for (int j = letras.length - 1; j >= 0; j--) {
+            System.out.print(letras[j]);
+        }
 
         int ct = 10;
         String array[] = new String[ct];
-        for (int x = 0; x < ct; x++)
+        for (
+                int x = 0;
+                x < ct; x++)
             array[x] = String.valueOf(x);
 
-        System.out.println(str[0] + "; " + str[1]);
+        //System.out.println(str[0] + "; " + str[1]);
 
     }
 }
