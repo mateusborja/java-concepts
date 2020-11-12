@@ -6,6 +6,7 @@ package com.mateusborja.challenges;
 
 public class SolutionReverse {
 
+
     public void reverseWords(char[] str) {
         int len = str.length;
         if (len == 0) return;
@@ -37,13 +38,8 @@ public class SolutionReverse {
 
         SolutionReverse sr = new SolutionReverse();
 
-        String[] str = new String[]{"abc", "abcd"};
-
-        String letrasStr = "Mateus Borja";
+        String letrasStr = "The sky is blue";
         char[] letras = letrasStr.toCharArray();
-
-        System.out.println();
-
 
         for (int i = 0; i < letras.length; i++) {
             System.out.print(letras[i]);
@@ -56,12 +52,9 @@ public class SolutionReverse {
 
         int ct = 10;
         String array[] = new String[ct];
-        for (
-                int x = 0;
-                x < ct; x++)
-            array[x] = String.valueOf(x);
 
-        //System.out.println(str[0] + "; " + str[1]);
+        for (int x = 0; x < ct; x++)
+            array[x] = String.valueOf(x);
 
     }
 }
