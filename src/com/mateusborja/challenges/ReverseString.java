@@ -15,6 +15,8 @@ public class ReverseString {
 
         array = input.toCharArray();
         JOptionPane.showMessageDialog(null, inverteString(array, array.length - 1, palavraInv));
+
+        System.exit(0);
     }
 
 
@@ -27,4 +29,5 @@ public class ReverseString {
         else
             return inverteString(array, size - 1, result);
     }
+
 }
