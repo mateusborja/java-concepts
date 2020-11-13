@@ -13,9 +13,8 @@ public abstract class Eletrodomestico {
         this.setLidado(ligado);
     }
 
-    abstract void ligar();
-
-    abstract void desligar();
+    public abstract void ligar();
+    public abstract void desligar();
 
     public void setNome(String nome) {
         this.nome = nome;
