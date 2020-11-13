@@ -10,8 +10,6 @@ import java.util.Scanner;
 
 public class FibonacciRecursivo {
 
-    static int fibonacciR;
-
     public static int fibonacciSeq(int num) {
 
         if (num < 2) {
@@ -22,17 +20,14 @@ public class FibonacciRecursivo {
 
     public static void main(String[] args) {
 
-        int i;
-
         Scanner sc = new Scanner(System.in);
         System.out.println();
         System.out.print("tell me num: ");
         int fb1 = sc.nextInt();
 
-        fibonacciR = fibonacciSeq(fb1);
 
         System.out.println("seq: ");
-        for (i = 0; i < +fb1; i++) {
+        for (int i = 0; i < fb1; i++) {
             System.out.print(" " + fibonacciSeq(i));
 
         }
