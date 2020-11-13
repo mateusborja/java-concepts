@@ -21,7 +21,7 @@ public class Geladeira extends Eletrodomestico{
 
 
 
-     public Geladeira(double voltagem, boolean ligado) {
+     public Geladeira(int voltagem, boolean ligado) {
         super(voltagem, ligado);
         setModelo(modelo);
         setBarCode(0l);
@@ -31,13 +31,13 @@ public class Geladeira extends Eletrodomestico{
 
     }
 
-    public Geladeira(String nome, double voltagem, boolean ligado) {
+    public Geladeira(String nome, int voltagem, boolean ligado) {
         super(nome, voltagem, ligado);
     }
 
     @Override
     public void ligar() {
-         super.setLidado(true);
+         super.setLigado(true);
          setFabricante("Brastemp");
          setModelo("Hitech-HC");
          setQuantidadePortas(3);
