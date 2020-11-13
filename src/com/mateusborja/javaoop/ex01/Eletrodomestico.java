@@ -1,3 +1,11 @@
+/*
+ * Copyright (c) 2020.  | All rights reserved
+ * Mateus Borja // UX Designer • 3D Artist • Developer
+ * www.mateusborja.life
+ */
+
+// super class abstract
+
 package com.mateusborja.javaoop.ex01;
 
 public abstract class Eletrodomestico {
@@ -7,6 +15,11 @@ public abstract class Eletrodomestico {
     private boolean lidado;
 
 
+    public Eletrodomestico(double voltagem, boolean ligado) {
+        this.setVoltagem(voltagem);
+        this.setLidado(ligado);
+    }
+
     public Eletrodomestico(String nome, double voltagem, boolean ligado) {
         this.setNome(nome);
         this.setVoltagem(voltagem);
@@ -14,6 +27,7 @@ public abstract class Eletrodomestico {
     }
 
     public abstract void ligar();
+
     public abstract void desligar();
 
     public void setNome(String nome) {
