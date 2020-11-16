@@ -22,9 +22,8 @@ public class ArrayExemplo04 {
 
     public static void main(String[] args) {
 
-        String s = nAleatorio().repeat(5);
-        System.out.println(" " + s);
-
+        String n1s = nAleatorio().repeat(5);
+        System.out.println(" " + n1s);
 
 
     }
