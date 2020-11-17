@@ -8,7 +8,7 @@ public class JavaWhileExemplo01 {
         int x = 0;
 
         while (x < 5) {
-            System.out.println(x);
+            System.out.print(" " + x);
             x++;
 
         }
@@ -17,14 +17,15 @@ public class JavaWhileExemplo01 {
         int y = 1;
 
         while (++y < 10) {
-            System.out.println(y);
+            System.out.print(" " + y);
         }
 
         System.out.println("\n");
 
         int z = -1;
-        while (z-- > -15) {
-            System.out.println(z);
+        while (z < 15) {
+            z++;
+            System.out.print(" " + z);
         }
         System.out.println("\n");
 
