@@ -12,7 +12,7 @@ import java.util.Random;
 
 public class TabelaComHashExemplo01 {
 
-    private static int getRandomNumberIntRange() {
+    private static int numRandomRange() {
         int min = 1, max = 100000;
         Random r = new Random();
         return r.nextInt(max - min + 1) + min;
@@ -28,7 +28,7 @@ public class TabelaComHashExemplo01 {
 
         try {
             for (int i = 0; i < 7000; i++) {
-                Integer randomico = getRandomNumberIntRange();
+                Integer randomico = numRandomRange();
                 resto = m % randomico;
                 if (mapa.get(randomico) != null) {
                     colisoes++;
@@ -36,7 +36,7 @@ public class TabelaComHashExemplo01 {
                 mapa.put(randomico, resto);
 
             }
-            System.out.println("Qtd de colisoes: " + colisoes);
+            System.out.print("Qtd de colisoes: " + colisoes);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
