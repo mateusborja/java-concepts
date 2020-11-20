@@ -8,15 +8,15 @@ package com.mateusborja.javarelationclass;
 
 public class Contato {
 
-    private String endereco;
+    private Endereco endereco;
     private Telefone[] telefones;
 
 
-    public String getEndereo() {
+    public Endereco getEndereo() {
         return endereco;
     }
 
-    public void setEndereo(String endereco) {
+    public void setEndereo(Endereco endereco) {
         this.endereco = endereco;
     }
 
