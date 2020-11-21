@@ -39,6 +39,21 @@ public class Somatorio {
         }
 
 
+        n = 10;
+        System.out.println();
+        do {
+            System.out.println("somatório de " + n + " é: " + somatorioDeUmNumero(n));
+            n++;
+        } while (n <= 20);
+
+
+        n = 45;
+        System.out.println();
+        for (int i = 30; i < n; i++) {
+            System.out.println("somatorio de " + i + " é: " + somatorioDeUmNumero(i));
+
+        }
+
     }
 
 
