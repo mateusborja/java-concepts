@@ -13,8 +13,8 @@ public class Somatorio {
 
     public static int somatorioDeUmNumero(int num) {
 
-        if (num == 1) {
-            return 1;
+        if (num == 0) {
+            return 0;
         }
         return num + somatorioDeUmNumero(num - 1);
     }
@@ -29,6 +29,14 @@ public class Somatorio {
         int num = r.nextInt();
 
         System.out.println("somatorio de " + num + " é: " + somatorioDeUmNumero(num));
+
+        int n = 0;
+
+        System.out.println();
+        while (n <= 8) {
+            System.out.println("somatório de " + n + " é: " + somatorioDeUmNumero(n));
+            n++;
+        }
 
 
     }
