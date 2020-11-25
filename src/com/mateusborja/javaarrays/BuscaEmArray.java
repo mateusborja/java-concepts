@@ -16,9 +16,7 @@ public class BuscaEmArray {
                 return true;
             }
         }
-
         return false;
-
     }
 
     public static void main(String[] args) {
@@ -29,12 +27,17 @@ public class BuscaEmArray {
 
         int x = 0;
         while (x < 10) {
-            System.out.println("Digite o " + (x + 1) + "o número: ");
+            System.out.print("Digite o " + (x + 1) + "o número: ");
             arr[x] = sc.nextInt();
             x++;
         }
+        System.out.print("Coleção: ");
+        for (int array : arr) {
+            System.out.print(array + " ");
+        }
 
-        System.out.println("Buscar por: ");
+        System.out.println();
+        System.out.print("Buscar por: ");
         int busca = sc.nextInt();
         boolean resultado = buscaEmArray(busca, arr);
         //System.out.println(resultado);
