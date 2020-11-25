@@ -8,7 +8,7 @@ package com.mateusborja.javaarrays;
 
 import java.util.Scanner;
 
-public class BuscaEmArray {     
+public class BuscaEmArray {
 
     public static boolean buscaEmArray(int x, int[] arr) {
         for (int i = 0; i < arr.length; i++) {
@@ -28,16 +28,22 @@ public class BuscaEmArray {
         int[] arr = new int[10];
 
         int x = 0;
-        while(x < 10) {
+        while (x < 10) {
             System.out.println("Digite o " + (x + 1) + "o número: ");
             arr[x] = sc.nextInt();
             x++;
         }
 
-        System.out.println("Buscar por: " );
+        System.out.println("Buscar por: ");
         int busca = sc.nextInt();
         boolean resultado = buscaEmArray(busca, arr);
-        System.out.println(resultado);
+        //System.out.println(resultado);
+
+        if (resultado) {
+            System.out.print("Busca Realizada! Resultado: " + busca);
+        } else {
+            System.out.print("Busca Realizada! Resultado: Não Encontrado!");
+        }
 
         sc.close();
 
