@@ -1,0 +1,38 @@
+/*
+ * Copyright (c) 2020.  | All rights reserved
+ * Mateus Borja // UX Designer • 3D Artist • Developer
+ * www.mateusborja.life
+ */
+
+package com.mateusborja.javaexceptions;
+
+public class Finally {
+
+    public static void main(String[] args) {
+
+        int arr1[] = {2, 4, 8, 12, 24};
+        int arr2[] = {1, 0, 2, 6};
+
+        for (int i = 0; i < arr1.length; i++) {
+            try {
+                System.out.println(arr1[i] + " / " + arr2[i] + " = " + (arr1[i] / arr2[i]));
+
+            } catch (ArithmeticException e) {
+                e.printStackTrace();
+                System.out.println("erro1 capturado!");
+                System.out.println(e.getMessage());
+
+            } catch (ArrayIndexOutOfBoundsException e) {
+                e.printStackTrace();
+                System.out.println("erro2 capturado!");
+                System.out.println(e.getMessage());
+            } finally {
+                System.out.println("bloco finaly");
+                System.out.println();
+            }
+
+
+        }
+
+    }
+}
