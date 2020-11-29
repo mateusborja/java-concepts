@@ -17,8 +17,11 @@ public class MultiplosCatch {
             try {
                 System.out.println(arr1[i] + " / " + arr2[i] + " = " + (arr1[i] / arr2[i]));
 
-            } catch (Exception e) {
+            } catch (ArithmeticException e) { //catch especifico
                 System.out.println("erro1 capturado!");
+            } catch (ArrayIndexOutOfBoundsException e) { // catch especifico
+                System.out.println("erro2 capturado!");
+
             }
 
 
