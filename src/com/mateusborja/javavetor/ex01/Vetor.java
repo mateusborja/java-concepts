@@ -26,6 +26,7 @@ public class Vetor {
         return tamanho;
     }
 
+    //adicionar elementos em um vetor
     public boolean adicionarVetor(String elemento) {
         if (this.tamanho < this.elementos.length) {
             this.elementos[this.tamanho] = elemento;
@@ -36,6 +37,7 @@ public class Vetor {
         return false;
     }
 
+    //imprimir elementos de um vetor
     public String imprimirVetores() {
         return Arrays.toString(elementos);
     }
@@ -55,6 +57,25 @@ public class Vetor {
         s.append("]");
 
         return s.toString();
+    }
+
+    //buscar um elemento em um array
+    public String buscarVetor(int posicao) {
+        if(!(posicao >= 0 && posicao < this.tamanho)) {
+            throw new IllegalArgumentException("Posição Inválida!");
+        }
+        return "[ " + this.elementos[posicao] + " ]";
+    }
+
+    //verificar se um elemento existe no vetor
+    public String buscarVetorExistente(String elemento) {
+        for (int i = 0; i < this.tamanho; i++) {
+            if(this.elementos[i].equalsIgnoreCase(elemento)) {
+                return "Posição: [ " + i + " ]";
+            }
+
+        }
+        return "Posição inexistente";
     }
 
 
