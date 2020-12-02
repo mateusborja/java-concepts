@@ -11,14 +11,18 @@ public class ClasseTesteVetor {
     public static void main(String[] args) {
 
         Vetor arr = new Vetor(8);
-        arr.adicionarVetor("Elemento 1");
-        arr.adicionarVetor("Elemento 2");
-        arr.adicionarVetor("Elemento 3");
-        arr.adicionarVetor("Elemento 4");
+        arr.adicionarVetor("desenvolvimento java");
+        arr.adicionarVetor("instituto");
+        arr.adicionarVetor("itn");
+        arr.adicionarVetor("mateus");
 
         System.out.println(arr);
 
         System.out.println("todos os vetores: " + arr.imprimirVetores());
+
+        System.out.println(arr.buscarVetor(3));
+
+        System.out.print(arr.buscarVetorExistente("itn"));
 
 
 
