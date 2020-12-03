@@ -79,13 +79,30 @@ public class Vetor {
     }
 
     //metodo que busca se um elemento existe em um vetor e retorna um booleano
-    public boolean buscarVetorExistenteOp2(String elemento) {
-        for (int i = 0; i < this.elementos.length; i++) {
-            if (this.elementos[i].equalsIgnoreCase(elemento)) {
-                return true;
+    public boolean buscarVetorExistenteOp2(String elemento)  {
+        try {
+
+            for (int i = 0; i < this.elementos.length; i++) {
+                if (this.elementos[i].equals(elemento)) {
+                    return true;
+                }
             }
+        } catch (NullPointerException e) {
+            System.out.println("Elemento não Existe");
+
         }
         return false;
+    }
+
+    //metodo que busca se um elemento existe e retorna a posição
+    public int buscarVetorExistenteOp3(String elemento) {
+        for (int i = 0; i < this.elementos.length; i++) {
+            if (this.elementos[i].equalsIgnoreCase(elemento)) {
+                return i;
+            }
+
+        }
+        return -1;
     }
 
 
