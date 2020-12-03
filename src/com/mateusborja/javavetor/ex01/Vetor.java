@@ -61,21 +61,31 @@ public class Vetor {
 
     //buscar um elemento em um array
     public String buscarVetor(int posicao) {
-        if(!(posicao >= 0 && posicao < this.tamanho)) {
+        if (!(posicao >= 0 && posicao < this.tamanho)) {
             throw new IllegalArgumentException("Posição Inválida!");
         }
         return "[ " + this.elementos[posicao] + " ]";
     }
 
-    //verificar se um elemento existe no vetor
+    //verificar se um elemento existe no vetor retornao uma string
     public String buscarVetorExistente(String elemento) {
         for (int i = 0; i < this.tamanho; i++) {
-            if(this.elementos[i].equalsIgnoreCase(elemento)) {
+            if (this.elementos[i].equalsIgnoreCase(elemento)) {
                 return "Posição: [ " + i + " ]";
             }
 
         }
         return "Posição inexistente";
+    }
+
+    //metodo que busca se um elemento existe em um vetor e retorna um booleano
+    public boolean buscarVetorExistenteOp2(String elemento) {
+        for (int i = 0; i < this.elementos.length; i++) {
+            if (this.elementos[i].equalsIgnoreCase(elemento)) {
+                return true;
+            }
+        }
+        return false;
     }
 
 
