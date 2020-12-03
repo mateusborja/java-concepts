@@ -79,7 +79,7 @@ public class Vetor {
     }
 
     //metodo que busca se um elemento existe em um vetor e retorna um booleano
-    public boolean buscarVetorExistenteOp2(String elemento)  {
+    public boolean buscarVetorExistenteOp2(String elemento) {
         try {
 
             for (int i = 0; i < this.elementos.length; i++) {
@@ -103,6 +103,22 @@ public class Vetor {
 
         }
         return -1;
+    }
+
+    //metodo q adiciona elemento em qlqr posicao do vetor
+    // 0 1 2 3 4 5 = tamanho 5
+    // B C E F G + + // adicionar A indice 0
+    public boolean adicionarVetorQlqrPos(int posicao, String elemento) {
+        if (!(posicao >= 0 && posicao <= tamanho)) {
+            throw new IllegalArgumentException("Posição Invalida");
+        }
+        for (int i = this.tamanho - 1; i >= posicao; i--) {
+            this.elementos[i + 1] = this.elementos[i];
+        }
+        //i = 5  = primeira passa 4 - mover todos os elementos
+        this.elementos[posicao] = elemento;
+        this.tamanho++;
+        return true;
     }
 
 
