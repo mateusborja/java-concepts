@@ -26,7 +26,7 @@ public class Vetor {
         return tamanho;
     }
 
-    //adicionar elementos em um vetor
+    //adiciona elementos em um vetor
     public boolean adicionarVetor(String elemento) {
         if (this.tamanho < this.elementos.length) {
             this.elementos[this.tamanho] = elemento;
@@ -37,7 +37,7 @@ public class Vetor {
         return false;
     }
 
-    //imprimir elementos de um vetor
+    //imprimi elementos de um vetor
     public String imprimirVetores() {
         return Arrays.toString(elementos);
     }
@@ -67,7 +67,7 @@ public class Vetor {
         return "[ " + this.elementos[posicao] + " ]";
     }
 
-    //verificar se um elemento existe no vetor retornao uma string
+    //verificar se um elemento existe no vetor - String
     public String buscarVetorExistente(String elemento) {
         for (int i = 0; i < this.tamanho; i++) {
             if (this.elementos[i].equalsIgnoreCase(elemento)) {
@@ -78,7 +78,7 @@ public class Vetor {
         return "Posição inexistente";
     }
 
-    //metodo que busca se um elemento existe em um vetor e retorna um booleano
+    //busca se um elemento existe em um vetor - boolean
     public boolean buscarVetorExistenteOp2(String elemento) {
         try {
 
@@ -105,7 +105,7 @@ public class Vetor {
         return -1;
     }
 
-    //metodo q adiciona elemento em qlqr posicao do vetor
+    //adiciona elemento em qlqr posicao do vetor
     // 0 1 2 3 4 5 = tamanho 5
     // B C E F G + + // adicionar A indice 0
     public boolean adicionarVetorQlqrPos(int posicao, String elemento) {
@@ -121,5 +121,24 @@ public class Vetor {
         return true;
     }
 
+    // B C E F G .
+    // 0 1 2 3 4 = tamanho  = 5
+    // adiciona um elemento em qlr posicao
+    public void adicionarVetorQlqrPosSemRetorno(int posicao, String elemento) {
+        if (!(posicao > 0 && posicao < this.tamanho)) {
+            throw new IllegalArgumentException("Posição Inválida!");
+        }
+
+        for (int i = this.tamanho - 1; i >= posicao; i--) {
+            this.elementos[i + 1] = this.elementos[i];
+        }
+        this.elementos[posicao] = elemento;
+        this.tamanho++;
+    }
 
 }
+
+
+
+
+
