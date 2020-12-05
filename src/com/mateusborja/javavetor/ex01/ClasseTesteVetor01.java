@@ -6,7 +6,7 @@
 
 package com.mateusborja.javavetor.ex01;
 
-public class ClasseTesteVetor {
+public class ClasseTesteVetor01 {
 
     public static void main(String[] args) {
 
