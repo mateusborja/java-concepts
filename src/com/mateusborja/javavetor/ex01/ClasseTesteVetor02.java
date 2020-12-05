@@ -27,6 +27,10 @@ public class ClasseTesteVetor02 {
         vetor.adicionarVetorQlqrPos(3, "D");
         System.out.println(vetor);
 
+        vetor.adicionarVetorQlqrPosSemRetorno(7, "H");
+        System.out.println(vetor);
+
+
 
 
 
