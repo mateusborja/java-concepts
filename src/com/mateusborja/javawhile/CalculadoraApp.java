@@ -4,7 +4,7 @@
  * www.mateusborja.life
  */
 
-package com.mateusborja.javadowhile;
+package com.mateusborja.javawhile;
 
 import java.util.Scanner;
 
@@ -18,10 +18,10 @@ public class CalculadoraApp {
 
         while (op != 5) {
 
-            System.out.print("\nnum1: ");
+            System.out.print("\ndigite o numero 1: ");
             int num1 = sc.nextInt();
 
-            System.out.print("num2: ");
+            System.out.print("digite o numero 2: ");
             int num2 = sc.nextInt();
 
             System.out.println("\nOPERAÇÃO:");
