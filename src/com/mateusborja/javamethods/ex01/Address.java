@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2020.  | All rights reserved
+ * Mateus Borja // UX Designer • 3D Artist • Developer
+ * www.mateusborja.life
+ */
+
 package com.mateusborja.javamethods.ex01;
 
 public class Address extends Person {
