@@ -1,4 +1,10 @@
-package com.mateusborja.javainheritance.ex01;
+/*
+ * Copyright (c) 2020.  | All rights reserved
+ * Mateus Borja // UX Designer • 3D Artist • Developer
+ * www.mateusborja.life
+ */
+
+package com.mateusborja.javainheritance.ex02;
 
 public class ContaCorrente extends Conta {
 
