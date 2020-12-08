@@ -151,7 +151,6 @@ public class Vetor {
     }
 
     //removendo elemento de um indice do vetor
-
     public void removerElementoQlqr(int posicao) {
         if (!(posicao >= 0 && posicao <= this.tamanho)) {
             throw new IllegalArgumentException("Posição Inválida!");
