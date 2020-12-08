@@ -40,7 +40,8 @@ public abstract class Eletrodomestico {
 
 
     public void setLigado(boolean ligado) {
-        if (ligado) this.ligado = true;
+        if (ligado)
+            this.ligado = true;
         else this.ligado = false;
     }
 
