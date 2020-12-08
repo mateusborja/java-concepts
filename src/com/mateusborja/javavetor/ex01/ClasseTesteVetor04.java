@@ -20,6 +20,8 @@ public class ClasseTesteVetor04 {
 
         System.out.println(vetor.imprimirVetores());
 
+        System.out.println(vetor.tamanhoDoVetor());
+
 
     }
 }
