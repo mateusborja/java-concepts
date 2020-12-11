@@ -1,5 +1,11 @@
+/*
+ * Copyright (c) 2020.  | All rights reserved
+ * Mateus Borja // UX Designer • 3D Artist • Developer
+ * www.mateusborja.life
+ */
+
 //java enum
-package com.mateusborja.javaenum;
+package com.mateusborja.javaenum.ex01;
 
 public class JavaEnum {
 
