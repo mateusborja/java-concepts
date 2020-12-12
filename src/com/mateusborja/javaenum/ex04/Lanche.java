@@ -8,6 +8,7 @@ package com.mateusborja.javaenum.ex04;
 
 public class Lanche {
 
+
     public enum Bebida {
         COCA_COLA("Coca-Cola", 5),
         FANTA("Fanta", 4.5f),
@@ -32,5 +33,30 @@ public class Lanche {
         }
 
     }
+
+
+    public enum Comida {
+        XSALADA("X-Salada", 5.5f),
+        HOTDOG("Hot-Dog", 4.5f),
+        XBURGER("X-Burger", 7.5f),
+        KIKAO("KIkao", 3.5f);
+
+        private String nome;
+        private float preco;
+
+        Comida(String nome, float preco) {
+            this.nome = nome;
+            this.preco = preco;
+        }
+
+        public String getNome() {
+            return nome;
+        }
+
+        public float getPreco() {
+            return preco;
+        }
+    }
+
 
 }
