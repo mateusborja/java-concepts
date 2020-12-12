@@ -1,6 +1,12 @@
+/*
+ * Copyright (c) 2020.  | All rights reserved
+ * Mateus Borja // UX Designer • 3D Artist • Developer
+ * www.mateusborja.life
+ */
+
 //java array simple de numeros com casa decimal
 
-package com.mateusborja.javaarrays;
+package com.mateusborja.javaarrays.ex01;
 
 import java.util.Locale;
 import java.util.Scanner;

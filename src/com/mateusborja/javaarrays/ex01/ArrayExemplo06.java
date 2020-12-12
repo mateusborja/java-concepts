@@ -4,7 +4,7 @@
  * www.mateusborja.life
  */
 
-package com.mateusborja.javaarrays;
+package com.mateusborja.javaarrays.ex01;
 
 import java.util.Random;
 

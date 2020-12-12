@@ -1,8 +1,14 @@
+/*
+ * Copyright (c) 2020.  | All rights reserved
+ * Mateus Borja // UX Designer • 3D Artist • Developer
+ * www.mateusborja.life
+ */
+
 /* java array simples
 /* de numeros inteiros
  */
 
-package com.mateusborja.javaarrays;
+package com.mateusborja.javaarrays.ex01;
 
 import java.util.Scanner;
 

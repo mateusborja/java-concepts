@@ -1,5 +1,11 @@
+/*
+ * Copyright (c) 2020.  | All rights reserved
+ * Mateus Borja // UX Designer • 3D Artist • Developer
+ * www.mateusborja.life
+ */
+
 // lendo array e imprimindo numeros pares
-package com.mateusborja.javaarrays;
+package com.mateusborja.javaarrays.ex01;
 
 import java.util.Locale;
 import java.util.Scanner;
