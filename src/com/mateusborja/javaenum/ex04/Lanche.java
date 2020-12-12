@@ -39,7 +39,7 @@ public class Lanche {
         XSALADA("X-Salada", 5.5f),
         HOTDOG("Hot-Dog", 4.5f),
         XBURGER("X-Burger", 7.5f),
-        KIKAO("KIkao", 3.5f);
+        KIKAO("Cachorro-Quente", 3.5f);
 
         private String nome;
         private float preco;
