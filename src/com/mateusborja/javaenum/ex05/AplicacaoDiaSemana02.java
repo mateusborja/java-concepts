@@ -4,7 +4,7 @@
  * www.mateusborja.life
  */
 
-package com.mateusborja.javaenum.ex06;
+package com.mateusborja.javaenum.ex05;
 
 public class AplicacaoDiaSemana02 {
 
