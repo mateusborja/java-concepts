@@ -4,7 +4,7 @@
  * www.mateusborja.life
  */
 
-package com.mateusborja.javapassagemparametro;
+package com.mateusborja.javapassagemparametro.ex01;
 
 public class Contato {
 
